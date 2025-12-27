@@ -61,7 +61,7 @@ namespace WFNetGame.Properties {
         }
         
         /// <summary>
-        ///   Ver.1.0.0(251222) に類似しているローカライズされた文字列を検索します。
+        ///   Ver.1.0.2(251227) に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string APP_VERSION {
             get {

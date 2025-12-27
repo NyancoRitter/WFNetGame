@@ -59,10 +59,8 @@ namespace WFGame
 				this.Width = m_ContentW*m_Scale;
 				this.Height = m_ContentH*m_Scale;
 
-				m_BG = BufferedGraphicsManager.Current.Allocate(
-					CreateGraphics(),
-					this.ClientRectangle
-				);
+				using( var g = CreateGraphics() )
+				{	 m_BG = BufferedGraphicsManager.Current.Allocate( g, this.ClientRectangle );	}
 			}
 		}
 
